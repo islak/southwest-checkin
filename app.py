@@ -13,9 +13,9 @@ def submit():
     first_name = request.form['first_name']
     last_name = request.form['last_name']
 
-    open_southwest_page()
+    open_southwest_page(confirmation_number, first_name, last_name)
 
-    return 'Page opened successfully!'
+    return 'Check-in form submitted!'
 
 if __name__ == '__main__':
     app.run(debug=True)
