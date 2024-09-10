@@ -19,8 +19,7 @@ def open_southwest_page(confirmation_number, first_name, last_name):
         driver.find_element(By.ID, 'confirmationNumber').send_keys(confirmation_number)
         driver.find_element(By.ID, 'passengerFirstName').send_keys(first_name)
         driver.find_element(By.ID, 'passengerLastName').send_keys(last_name)
-    
-        # Submit the form
+
         driver.find_element(By.ID, 'form-mixin--submit-button').click()
         print('Form submitted!')
     except Exception as e:
