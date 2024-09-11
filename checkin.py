@@ -3,9 +3,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
+import config
 
 def open_southwest_page(confirmation_number, first_name, last_name):
-    chrome_driver_path = '/Users/hershkalsi/Documents/chromedriver-mac-arm64/chromedriver'
+    chrome_driver_path = config.CHROME_DRIVER_PATH
 
     chrome_options = Options()
     # chrome_options.add_argument('--headless') 
